@@ -1,0 +1,34 @@
+{
+  "modelo": "LightGBM",
+  "estrategia": "Optuna (TPE)",
+  "f1_macro_cv": 0.8194396868101936,
+  "parametros": {
+    "clf__n_estimators": 295,
+    "clf__learning_rate": 0.017283796920345557,
+    "clf__num_leaves": 54,
+    "clf__max_depth": 6,
+    "clf__min_child_samples": 105,
+    "clf__subsample": 0.5787891219293505,
+    "clf__colsample_bytree": 0.8576254674452628,
+    "clf__reg_lambda": 0.6753869863042661
+  },
+  "calibrar_isotonica": false,
+  "log_loss_oof": {
+    "sin_calibrar": 0.37117263099663905,
+    "isotonica": 0.39068570388237456
+  },
+  "comparacion_busquedas": [
+    {
+      "estrategia": "Random Search",
+      "mejor_f1_macro_cv": 0.8178,
+      "evaluaciones": 30,
+      "segundos": 2644.8
+    },
+    {
+      "estrategia": "Optuna (TPE)",
+      "mejor_f1_macro_cv": 0.8194,
+      "evaluaciones": 30,
+      "segundos": 1018.4
+    }
+  ]
+}

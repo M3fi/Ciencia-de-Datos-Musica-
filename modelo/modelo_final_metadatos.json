@@ -1,0 +1,57 @@
+{
+  "fecha": "2026-11-16 13:20:40",
+  "clases": [
+    "Alternative",
+    "Anime",
+    "Blues",
+    "Classical",
+    "Country",
+    "Electronic",
+    "Hip-Hop",
+    "Jazz",
+    "Rap",
+    "Rock"
+  ],
+  "columnas_entrada": [
+    "popularity",
+    "acousticness",
+    "danceability",
+    "duration_ms",
+    "energy",
+    "instrumentalness",
+    "liveness",
+    "loudness",
+    "speechiness",
+    "tempo",
+    "valence",
+    "key",
+    "mode",
+    "artist_name"
+  ],
+  "metricas_test": {
+    "f1_macro": 0.8304,
+    "accuracy": 0.8406,
+    "roc_auc_ovr": 0.9883,
+    "log_loss": 0.3556,
+    "brier": 0.1978,
+    "ece": 0.017
+  },
+  "hiperparametros": {
+    "modelo": "LightGBM",
+    "clf__n_estimators": 295,
+    "clf__learning_rate": 0.017283796920345557,
+    "clf__num_leaves": 54,
+    "clf__max_depth": 6,
+    "clf__min_child_samples": 105,
+    "clf__subsample": 0.5787891219293505,
+    "clf__colsample_bytree": 0.8576254674452628,
+    "clf__reg_lambda": 0.6753869863042661
+  },
+  "versiones": {
+    "python": "3.12.10",
+    "sklearn": "1.9.1",
+    "lightgbm": "4.7.0",
+    "pandas": "3.1.1",
+    "numpy": "2.5.5"
+  }
+}
